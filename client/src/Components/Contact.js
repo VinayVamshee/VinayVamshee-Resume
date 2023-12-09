@@ -11,7 +11,7 @@ export default function Contact() {
 
   const SendFeedback = (e) => {
     e.preventDefault();
-    alert("hi")
+    alert("Thank You!")
 
     emailjs.sendForm('service_aqzdeqk', 'template_otrzcir', form.current, 'ss9CQ81YavvBu3-nr')
       .then((result) => {

@@ -31,7 +31,7 @@ export default function Home() {
                 }
             </p>
             {/* <p>A dedicated student of Computer Science specializing<br /> in Internet of Things at VIT, Vellore.<br /> Passionate about mastering Frontend development<br /> to create seamless and innovative user experiences.</p> */}
-            <a href={Resume} download="VinayVamshee Resume" style={{ fontFamily: 'impact', margin: '1rem', animation: 'SlideTop 1s forwards' }} className='btn btn-outline-danger'>Download Resume</a>
+            <a href={Resume} download="VinayVamshee-Resume" style={{ fontFamily: 'impact', margin: '1rem', animation: 'SlideTop 1s forwards' }} className='btn btn-outline-danger'>Download Resume</a>
             <div className='Pic'>
                 <img className='BG' src={SolidBg} alt='...' />
                 <img className='image' src={VinayVamshee} alt='...' />

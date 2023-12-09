@@ -22,43 +22,43 @@ export default function About() {
     const [AllAdditionalSkill, setAllAdditionalSkill] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3001/GetAboutIntro')
+        axios.get('https://vinay-vamshee-resume-server.vercel.app/GetAboutIntro')
             .then(result => setAboutIntro(result.data))
             .catch(error => console.log(error))
     }, [])
 
     useEffect(() => {
-        axios.get('http://localhost:3001/GetCGPA')
+        axios.get('https://vinay-vamshee-resume-server.vercel.app/GetCGPA')
             .then(result => setAllCGPA(result.data))
             .catch(error => console.log(error))
     }, [])
 
     useEffect(() => {
-        axios.get('http://localhost:3001/GetSemester')
+        axios.get('https://vinay-vamshee-resume-server.vercel.app/GetSemester')
             .then(result => setAllSemester(result.data))
             .catch(error => console.log(error))
     }, [])
 
     useEffect(() => {
-        axios.get('http://localhost:3001/GetSkill')
+        axios.get('https://vinay-vamshee-resume-server.vercel.app/GetSkill')
             .then(result => setAllSkill(result.data))
             .catch(error => console.log(error))
     }, [])
 
     useEffect(() => {
-        axios.get('http://localhost:3001/GetProject')
+        axios.get('https://vinay-vamshee-resume-server.vercel.app/GetProject')
             .then(result => setAllProject(result.data))
             .catch(error => console.log(error))
     }, [])
 
     useEffect(() => {
-        axios.get('http://localhost:3001/GetCourse')
+        axios.get('https://vinay-vamshee-resume-server.vercel.app/GetCourse')
             .then(result => setAllCourse(result.data))
             .catch(error => console.log(error))
     }, [])
 
     useEffect(() => {
-        axios.get('http://localhost:3001/GetAdditionalSkill')
+        axios.get('https://vinay-vamshee-resume-server.vercel.app/GetAdditionalSkill')
             .then(result => setAllAdditionalSkill(result.data))
             .catch(error => console.log(error))
     }, [])

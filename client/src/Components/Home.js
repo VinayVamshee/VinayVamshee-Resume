@@ -11,7 +11,7 @@ export default function Home() {
 
     const [Intro, setIntro] = useState([]);
     useEffect(() => {
-        axios.get('http://localhost:3001/GetIntro')
+        axios.get('https://vinay-vamshee-resume-server.vercel.app/GetIntro')
             .then(result => setIntro(result.data))
             .catch(error => console.log(error))
     }, [])

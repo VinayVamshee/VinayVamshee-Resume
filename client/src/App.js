@@ -20,6 +20,7 @@ const ThemeStored = () => {
 
 function App() {
 
+  // eslint-disable-next-line
   const [Theme, setTheme] = useState(ThemeStored);
   useEffect(() => {
     localStorage.setItem('Theme', JSON.stringify(Theme))

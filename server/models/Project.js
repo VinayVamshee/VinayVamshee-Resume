@@ -20,6 +20,9 @@ const ProjectSchema = new mongoose.Schema({
     Contributions: {
         type: String,
     },
+    Links: {
+        type: [String]
+    }
 
 });
 

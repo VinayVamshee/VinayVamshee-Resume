@@ -442,6 +442,15 @@ titlename {
     opacity: 1;
   }
 }
+@media screen and (max-width: 1150px) {
+  .Project-Info {
+    flex-wrap: wrap;
+  }
+  .Project-Info .carousel img {
+    width: 100%;
+    height: 400px;
+  }
+}
 
 @media screen and (max-width: 950px) {
   

@@ -1,15 +1,8 @@
 import './style.css'
-// import {Link} from 'react-router-dom'
 import VinayVamshee from './Images/VinayVamsheeAbout.png'
 import SolidBg from './Images/SolidBG.png'
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import HomePage from './Images/Carousel/HomePage.png'
-import AboutPage from './Images/Carousel/AboutUS.png'
-import EventsNow from './Images/Carousel/EventsNow.png'
-import AdminPage from './Images/Carousel/AdminPage.png'
-import AddEventPage from './Images/Carousel/AddEventPage.png'
-import MongoDB from './Images/Carousel/MongoDB.png'
 
 export default function About() {
 
@@ -78,7 +71,7 @@ export default function About() {
                 My academic focus revolves around mastering the intricacies of web technologies,
                 where I have passionately contributed as a Frontend Developer in a team project centered on Event Management.<br /> With a commitment to crafting seamless and user-friendly web experiences, I leverage the latest tools and frameworks to bring ideas to life.<br />
                 Beyond my academic pursuits, my interest extends to the latest advancements in mobile and laptop technologies, exploring the components that drive innovation in the digital realm.<br /> As a dedicated web developer, I am enthusiastic about staying at the forefront of advancements in the field. Let's collaborate to build impactful and cutting-edge web solutions!*/}
-                
+
                 <p>{
                     AboutIntro.map((Element) => {
                         return (
@@ -88,7 +81,7 @@ export default function About() {
                         )
                     })
                 }<br /></p>
-                 -----------------------<br />
+                -----------------------<br />
 
 
                 <h3>Education</h3><br />
@@ -168,24 +161,43 @@ export default function About() {
                     Implemented backend functionalities using NodeJS.<br />
                     Integrated MongoDB for efficient data storage and retrieval. */}
                     {
-                        AllProject.map((Element, idx) => {
-                            return (
-                                <div key={idx}>
-                                    <li>
-                                        <titlename>{Element.Name}</titlename> <br />
-                                        <titlename>Description :</titlename> {Element.Description}<br />
-                                        <titlename>Technologies Used :</titlename><br /> {Element.Technology} <br />
-                                        <titlename>GitHub Repository :</titlename> [<a href={Element.GitHub} rel="noreferrer" target='_blank'>{Element.GitHub}</a>]<br />
-                                        <titlename>Deployment Link :</titlename> [<a href={Element.Link} rel="noreferrer" target='_blank'>{Element.Link}</a>] <br />
-                                        <titlename>Key Contributions :</titlename><br /> {Element.Contributions}<br />
-                                    </li>
-                                </div>
-                            )
-                        })
-                    }
-                    <br />-----------------------<br />
+  AllProject.map((Element, idx) => {
+    return (
+      <div className='Project-Info' key={idx}>
+        <li>
+          <titlename>{Element.Name}</titlename> <br />
+          <titlename>Description :</titlename> {Element.Description}<br />
+          <titlename>Technologies Used :</titlename><br /> {Element.Technology} <br />
+          <titlename>GitHub Repository :</titlename> [<a href={Element.GitHub} rel="noreferrer" target='_blank'>{Element.GitHub}</a>]<br />
+          <titlename>Deployment Link :</titlename> [<a href={Element.Link} rel="noreferrer" target='_blank'>{Element.Link}</a>] <br />
+          <titlename>Key Contributions :</titlename><br /> {Element.Contributions}<br />
+          <br />-----------------------<br />
+        </li>
+       
+        <div id={`carouselExampleAutoplaying-${idx}`} className="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div className="carousel-inner">
+            {Element.Links.map((link, linkIdx) => (
+              <div key={linkIdx} className={`carousel-item ${linkIdx === 0 ? 'active' : ''}`}>
+                <img src={link} alt={`Slide ${linkIdx + 1}`} />
+              </div>
+            ))}
+          </div>
+          <button className="carousel-control-prev" type="button" data-bs-target={`#carouselExampleAutoplaying-${idx}`} data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target={`#carouselExampleAutoplaying-${idx}`} data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    );
+  })
+}
+
                 </div>
-                <div>
+                {/* <div>
                     <div id="carouselExample" className="carousel slide carousel-fade shadow" >
                         <div className="carousel-inner">
                             <div className="carousel-item active">
@@ -216,7 +228,7 @@ export default function About() {
                             <span className="visually-hidden">Next</span>
                         </button>
                     </div>
-                </div>
+                </div> */}
 
             </p>
 

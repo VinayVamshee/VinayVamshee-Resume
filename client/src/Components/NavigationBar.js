@@ -40,11 +40,11 @@ export default function NavigationBar() {
                 <p className='ps-2'>My Portfolio</p>
             </div>
             <div className='NaviItems'>
-                <Link to='/' className='btn btn-info button' style={{ fontFamily: 'Comic' }}>Home</Link>
-                <Link to='/About' className='btn btn-info button' style={{ fontFamily: 'Comic' }}>About</Link>
+                <Link to='/' className='btn button' style={{ fontFamily: 'Comic' }}>Home</Link>
+                <Link to='/About' className='btn button' style={{ fontFamily: 'Comic' }}>About</Link>
                 {/* <button className='btn btn-outline-primary' style={{ fontFamily: 'Comic' }}>About</button> */}
-                <Link to='/Contact' className='btn btn-info button' style={{ fontFamily: 'Comic' }}>Contact Me</Link>
-                <button onClick={ChangeTheme} className='btn btn-outline-secondary button rounded-5' style={{ fontFamily: 'Comic' }}>Theme</button>
+                <Link to='/Contact' className='btn button' style={{ fontFamily: 'Comic' }}>Contact Me</Link>
+                <button onClick={ChangeTheme} className='btn button' style={{ fontFamily: 'Comic' }}>Theme</button>
             </div>
         </div>
     )

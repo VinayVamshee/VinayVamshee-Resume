@@ -4,18 +4,18 @@
 
 .light-theme {
   --text-color: black;
-  --BG-color: #95bcef;
+  --BG-color: linear-gradient(to bottom, #33CCFF, #0066CC);
 }
 
 .dark-theme {
   --text-color: white;
-  --BG-color: #15345c;
+  --BG-color:  linear-gradient(to bottom, #001F3F, #0066CC);;
 }
 
 .App {
   height: 100%;
   width: 100%;
-  background-color: var(--BG-color);
+  background: var(--BG-color);
 }
 
 /* 
@@ -121,7 +121,8 @@
 }
 
 .NaviItems .button {
-  border: 1px solid var(--text-color);
+  font-family: Comic;
+  font-size: large;
   color: var(--text-color);
 }
 

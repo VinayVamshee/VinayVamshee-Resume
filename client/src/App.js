@@ -7,16 +7,9 @@ import NavigationBar from "./Components/NavigationBar";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 const ThemeStored = () => {
-  let Theme = localStorage.getItem('Theme');
-  if (Theme) {
-    return (
-      JSON.parse(localStorage.getItem('Theme'))
-    )
-  }
-  else {
-    return [];
-  }
-}
+  const storedTheme = localStorage.getItem('Theme');
+  return storedTheme ? JSON.parse(storedTheme) : 'dark-theme';
+};
 
 function App() {
 

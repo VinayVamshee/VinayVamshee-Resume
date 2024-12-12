@@ -64,7 +64,7 @@ export default function About() {
                 <img className='BG-About' src={SolidBg} alt='...' />
                 <img className='image-About' src={VinayVamshee} alt='...' />
             </div>
-            <p className='section1' id='About'> <h2 style={{ fontFamily: 'comic', color: 'red', animation: 'SlideBottom 1s forwards' }}>Pechetti Vinay Vamshee</h2> <br />
+            <p className='section1' id='About'> <h2 style={{ fontFamily: 'comic', color: 'red', animation: 'SlideBottom 1s forwards' }}>Pechetti Vinay Vamshee</h2>
                 -----------------------<br />
 
                 {/* Greetings! I am a third-year Computer Science - IOT student at VIT Vellore, specializing in Web Development.<br />
@@ -84,7 +84,7 @@ export default function About() {
                 -----------------------<br />
 
 
-                <h3>Education</h3><br />
+                <h3>Education</h3>
                 Bachelor of Technology in Computer Science and Engineering (CSE) with Specialization in IoT<br />
                 <titlename>University Name</titlename>: VIT, Vellore<br />
                 <titlename>CGPA</titlename>: {
@@ -146,7 +146,7 @@ export default function About() {
             </p>
             <p className='section3'>
                 <div>
-                    <h3>Projects</h3><br />
+                    <h3>Projects</h3>
                     {/* <titlename>EventHub - Event Management Website</titlename><br />
                     <titlename>Description</titlename>: Collaborated on a team project to develop an Event Management Website.<br />
                     <titlename>Technologies Used</titlename>:<br />
@@ -165,7 +165,7 @@ export default function About() {
     return (
       <div className='Project-Info' key={idx}>
         <li>
-          <titlename>{Element.Name}</titlename> <br />
+          <titlename style={{fontStyle: 'italic', textDecoration: 'underline'}}>{Element.Name}</titlename> <br />
           <titlename>Description :</titlename> {Element.Description}<br />
           <titlename>Technologies Used :</titlename><br /> {Element.Technology} <br />
           <titlename>GitHub Repository :</titlename> [<a href={Element.GitHub} rel="noreferrer" target='_blank'>{Element.GitHub}</a>]<br />
@@ -233,7 +233,7 @@ export default function About() {
             </p>
 
             <p className='section4'>
-                <h3>ACADEMIC COURSES</h3><br />
+                <h3>ACADEMIC COURSES</h3>
                 {/* <titlename>Computer Programming</titlename>: Java<br />
                 <titlename>Data Structures and Algorithms</titlename><br />
                 <titlename>Computer Networks</titlename>: Cisco Packet Tracer<br />

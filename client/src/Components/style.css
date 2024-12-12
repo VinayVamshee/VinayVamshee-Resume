@@ -80,11 +80,21 @@
   gap: 10px;
   justify-content: space-between;
   align-items: center;
+  margin: 10px;
 }
 .Project-Info .carousel img {
   height: 400px;
   width: 650px;
-  object-fit: contain;
+  object-fit: cover;
+}
+
+.Project-Info li {
+  list-style-type: none;
+}
+
+.carousel .carousel-inner {
+  border-radius: 15px;
+  filter: drop-shadow(10px 10px 20px rgba(67, 67, 67, 0.586));
 }
 
 .NavigationBar {
@@ -390,7 +400,6 @@
 
 titlename {
   font-family: Arial, Helvetica, sans-serif;
-  text-decoration: underline;
   font-weight: bold;
   margin-right: 5px;
   font-size: 1.12rem;
@@ -626,4 +635,3 @@ titlename {
     height: 550px;
   }
 }
-
